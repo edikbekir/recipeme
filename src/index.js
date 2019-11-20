@@ -6,7 +6,6 @@ import { history } from './helpers/history';
 import routes from './config/routes';
 import store from './config/store';
 
-import App from "./components/App.js";
 import './styles/App.css';
 
 ReactDOM.render(
