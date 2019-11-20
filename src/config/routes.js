@@ -1,9 +1,10 @@
 import React from 'react'
 
 import { Route, Redirect, Switch } from 'react-router';
-import App from '../components/App';
+import Blank from '../components/layouts/Blank';
+
 export default (
   <Switch>
-    <Route path="/" component={App} />
+    <Route path="/login" component={Blank} />
   </Switch>
 );
