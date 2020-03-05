@@ -167,15 +167,6 @@ h6 {
   display: table-cell;
 }
 
-div.main-heading {
-  margin-top: 76px;
-  background: url("../../public/images/recipe-background.jpg") top left/cover no-repeat;
-  width: 1290px;
-  height: 669px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  position: relative;
-}
 
 .main-input {
   position: absolute;
