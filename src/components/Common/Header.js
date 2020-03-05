@@ -7,21 +7,33 @@ export default class Header extends React.Component {
     showNavBar: false
   }
 
-  toggleNavBar = () => {
-    this.setState({
-      showNavBar: !this.state.showNavBar
-    })
-  }
 
   render(){
     return(
-      <div className="w3-top navbar">
-        <div className="w3-xlarge bg-black border-bottom-radius" style={{ margin: 'auto'}}>
-          <div onClick={() => this.toggleNavBar() } className="w3-button w3-padding-16 border-bottom-radius bg-white w3-left">☰</div>
-          <div className="w3-center w3-padding-16 bg-white">R E C I P E M E</div>
-          <NavBar toggleNavBar={this.toggleNavBar} showNavBar={this.state.showNavBar} />
+        <nav class="navbar navbar-expand-lg" >
+          <a class="navbar-brand" href="#"><img class="img-fluid img_logo" src="../../public/images/logo1.png" alt=""></img></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Распознать продукты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Мои заказы</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" action="№" >
+            <button class="btn btn-outline-warning my-2 my-sm-0 " type="submit"  > Вход</button>   </form>
+          <form class="form-inline my-2 my-lg-0 " action="№">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" >Регистрация</button>
+          </form>
         </div>
-      </div>
+  </nav>
     )
   }
 }
