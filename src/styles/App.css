@@ -94,23 +94,11 @@ h6 {
 }
 
 .page-wrapper {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .bg-red {
-  background: #fa4251;
-}
-
-.bg-black {
-  background: #1f1f1f !important;
-}
-
-.bg-white {
-  color: #fff !important;
-}
-
-.bg-blue {
-  background: #2c6ed5;
+  background-color: white;
 }
 
 .p-t-180 {
@@ -163,14 +151,14 @@ h6 {
 
 .card-2 .card-heading {
   background: url("../../public/images/bg-heading-02.jpg") top left/cover no-repeat;
-  width: 29.1%;
+  width: 30%;
   display: table-cell;
 }
 
 
 .main-input {
   position: absolute;
-  top: 50%;
+  top: 20%;
 }
 
 .card-2 .card-body {
@@ -192,6 +180,7 @@ h6 {
   .card-2 .card-body {
     display: block;
     padding: 60px 50px;
+
   }
 }
 
@@ -237,21 +226,6 @@ h6 {
   color: #808080;
 }
 
-.flex-form input[type="submit"] {
-  background: #ef3f5a;
-  border: 1px solid #ef3f5a;
-  color: #fff;
-  padding: 0 30px;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.flex-form input[type="submit"]:hover {
-  background: #d73851;
-  border: 1px solid #d73851;
-}
 
 .flex-form {
   display: -webkit-box;
@@ -294,4 +268,15 @@ input[type="text"] {
   .flex-form > * {
     font-size: 0.9rem;
   }
+}
+.sign_up_button{
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  border-radius: 100px;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
 }

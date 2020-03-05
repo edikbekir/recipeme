@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import LoginForm from '../components/forms/login';
+import Footer from '../components/Common/Footer';
 
 export default class Login extends React.Component {
   render(){
     return(
+        <div>
       <div className="page-wrapper bg-red p-t-180 p-b-100 font-robo">
         <div className="wrapper wrapper--w960">
           <div className="card card-2">
@@ -15,6 +17,8 @@ export default class Login extends React.Component {
           </div>
         </div>
       </div>
+          <Footer/>
+        </div>
     )
   }
 }
