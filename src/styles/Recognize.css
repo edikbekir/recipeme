@@ -1,0 +1,58 @@
+@import 'https://fonts.googleapis.com/css?family=Lora&display=swap';
+@import "https://fonts.googleapis.com/css?family=Lobster|Lora&display=swap";
+
+nav { background-color: black;}
+
+
+
+.recognize_central_container {
+    padding-top: 100px;
+    padding-bottom: 100px   ;
+    background-image: url("../../public/images/recognize.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3 { padding-bottom:100px;
+    color: black;
+    font-size: 35px;
+    font-family: 'Lobster', cursive;
+}
+.col-lg-6 {
+    left:150px;
+}
+
+input {
+    height: 50px;
+    width: 100%;
+    border-radius: 100px;
+    padding-left: 20px;
+    outline: none;
+    border: transparent;
+}
+
+.enter_action {
+    width:5%;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 100px;
+    color: black;
+    background-color: white;
+    position: absolute;
+    right: 375px;
+}
+
+
+.main_table {
+    margin-top: 50px;
+}
+
+.under_table button {
+    background-color: black;
+    margin: 10px 10px;
+    border-radius: 100px;
+    height:35px;
+    width:160px;
+    color: #dee58d;
+}
