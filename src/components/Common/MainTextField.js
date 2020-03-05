@@ -25,7 +25,7 @@ export default class MainTextField extends React.Component {
                     </div>
                     <div className="col-lg-2">
                         <form action="">
-                            <button type="submit"> ></button>
+                            <button className="next_but" type="submit"> ></button>
                         </form>
                     </div>
                 </div>
