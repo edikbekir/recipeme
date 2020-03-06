@@ -64,5 +64,5 @@ export default class Recognize extends React.Component {
                 <Footer/>
             </div>
         )
-    }
+}
 }

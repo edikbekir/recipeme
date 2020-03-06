@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap";
+
 input {
 outline: none;
 margin: 0;
@@ -94,7 +96,7 @@ h6 {
 }
 
 .page-wrapper {
-  min-height: 80vh;
+  margin-top:1%;
 }
 
 .bg-red {
@@ -164,12 +166,13 @@ h6 {
 .card-2 .card-body {
   display: table-cell;
   padding: 80px 90px;
-  padding-bottom: 88px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 767px) {
   .card-2 {
     display: block;
+
   }
   .card-2 .card-heading {
     width: 100%;
@@ -252,7 +255,7 @@ input[type="text"] {
   flex-basis: 500px;
 }
 
-@media all and (max-width:800px) {
+@media all and (max-width:700px) {
   body {
     font-size: 0.9rem;
   }
@@ -279,4 +282,36 @@ input[type="text"] {
   width: 200px;
   height: 50px;
   margin-top: 20px;
+}
+
+.sign {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6rem;
+  top:80px;
+  padding-bottom: 0px;
+  position: relative;
+  text-align: center;
+  color: white;
+  opacity: 0.7;
+  animation: neon .08s ease-in-out infinite alternate;
+}
+@keyframes neon {
+  from {
+    text-shadow:
+            0 0 6px rgba(202,228,225,0.92),
+            0 0 30px rgba(202,228,225,0.34),
+            0 0 12px yellow,
+            0 0 21px #F0E68C,
+            0 0 34px #FFE4B5,
+            0 0 54px #FFD700;
+  }
+  to {
+    text-shadow:
+            0 0 6px rgba(202,228,225,0.98),
+            0 0 30px rgba(202,228,225,0.42),
+            0 0 12px yellow,
+            0 0 22px #F0E68C,
+            0 0 38px #FFE4B5,
+            0 0 60px #FFD700;
+  }
 }

@@ -125,13 +125,14 @@ p {
 .authors {
     color: #D3D3D3;
     font-size: 15px;
-    position: relative;
-    padding-left: 270px;
+    padding-left: 260px;
+    padding-top: 1px;
 }
 
 .author {
     color: #D3D3D3;
     font-size: 15px;
+    padding-top: 1px;
     position: center;
 }
 
@@ -193,13 +194,15 @@ img {
 .img_local_ua {
     width: 30px;
     position: relative;
-    padding-top: 90px;
-
+    padding-top: 80px;
+    right: 1195%;
 }
 
 .img_local_en {
     width: 30px;
     position: relative;
-    padding-top: 90px;
-    margin-left: 5px;
+    padding-top: 80px;
+    right: 1300%;
+    /*margin-left: 55px;*/
 }
+

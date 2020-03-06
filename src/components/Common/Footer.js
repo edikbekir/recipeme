@@ -21,8 +21,10 @@ export default class Footer extends React.Component {
                     </li>
                 </div>
             </div>
-            <img className="img_local_ua" src="../../public/images/ua.jpg"></img>
+            <div className="local_image">
+                <img className="img_local_ua" src="../../public/images/ua.jpg"></img>
                 <img className="img_local_en" src="../../public/images/en.jpg"></img>
+            </div>
         </nav>
             </div>
         );
