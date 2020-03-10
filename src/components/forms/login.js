@@ -7,10 +7,7 @@ export default class LoginForm extends React.Component {
     return(
       <form>
         <div className="input-group">
-          <TextInputField type="text" placeholder="First Name" name="firstName" />
-        </div>
-        <div className="input-group">
-          <TextInputField type="text" placeholder="Last Name" name="lastName" />
+          <TextInputField type="text" placeholder="Email" name="firstName" />
         </div>
         <div className="input-group">
           <TextInputField type="password" placeholder="Password" name="password" />
@@ -18,6 +15,7 @@ export default class LoginForm extends React.Component {
         <div className="input-group">
           <TextInputField type="password" placeholder="Password confirmation" name="passwordConfirmation" />
         </div>
+          <button className="sign_up_button"> Зареєструватись</button>
       </form>
     )
   }
