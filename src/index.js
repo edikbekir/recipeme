@@ -7,6 +7,7 @@ import routes from './config/routes';
 import store from './config/store';
 
 import './styles/App.css';
+import './styles/Login.css';
 
 ReactDOM.render(
   <Provider store={store}>

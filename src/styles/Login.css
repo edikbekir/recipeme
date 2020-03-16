@@ -1,0 +1,18 @@
+.loginActions {
+  display: flex;
+  justify-content: center;
+}
+
+.loginButton {
+  background: black;
+  border-radius: 10px;
+  width: 50%;
+  padding: 10px;
+  font-size: 19px;
+  color: #fff;
+}
+
+.loginButton:hover {
+  cursor: pointer;
+  background: grey;
+}
