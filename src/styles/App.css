@@ -205,7 +205,9 @@ div.main-heading {
 }
 
 
-.title {
+.login-title {
+  display: flex;
+  justify-content: center;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 37px;
@@ -222,28 +224,32 @@ div.main-heading {
   color: #666;
   font-size: 16px;
   font-weight: 500;
+  background: #AA9;
+  border-radius: 4px;
+  color: #000;
+  padding: 10px;
 }
 
 .input--style-2::-webkit-input-placeholder {
-  color: #808080;
+  color: #fff;
 }
 
 .input--style-2:-moz-placeholder {
-  color: #808080;
+  color: #fff;
   opacity: 1;
 }
 
 .input--style-2::-moz-placeholder {
-  color: #808080;
+  color: #fff;
   opacity: 1;
 }
 
 .input--style-2:-ms-input-placeholder {
-  color: #808080;
+  color: #fff;
 }
 
 .input--style-2:-ms-input-placeholder {
-  color: #808080;
+  color: #fff;
 }
 
 .flex-form input[type="submit"] {

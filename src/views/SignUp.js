@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import LoginForm from '../components/forms/login';
+import SignUpForm from '../components/forms/signup';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
 import { usersActions } from '../data/actions/users';
 import parser from 'url-parse';
 
-export class Login extends React.Component {
+export class SignUp extends React.Component {
   constructor(props){
     super(props);
 
-    const { query : { back = '/home'} } = parser(this.props.location.search, '', true);
+    const { query : { back = '/'} } = parser(this.props.location.search, '', true);
 
     this.state = {
       redirect: back,
@@ -23,14 +23,6 @@ export class Login extends React.Component {
   }
 
   componentDidUpdate(prevProps){
-    console.log(this.props.user.loggedIn)
-    if(this.props.user.loggedIn){
-      this.props.history.push(this.state.redirect);
-    }
-  }
-
-  componentWillMount = () => {
-    console.log(this.props.user.loggedIn)
     if(this.props.user.loggedIn){
       this.props.history.push('/home');
     }
@@ -61,7 +53,7 @@ export class Login extends React.Component {
     e.preventDefault();
     const existEmptyField = this._handleEmptyFields();
     if(!existEmptyField){
-      this.props.onLogin(this.state.user);
+      this.props.onSignUp(this.state.user);
     }
   }
 
@@ -72,8 +64,8 @@ export class Login extends React.Component {
           <div className="card card-2">
             <div className="card-heading"></div>
             <div className="card-body">
-              <h2 className="login-title">Login</h2>
-              <LoginForm onSubmit={this.handleSubmit} onChange={this.handleChange}/>
+              <h2 className="login-title">Sign up</h2>
+              <SignUpForm onSubmit={this.handleSubmit} onChange={this.handleChange}/>
               { this.props.user.error && <div>{ this.props.user.error }</div> }
               { this.state.error.value && <div>{ this.state.error.message }</div> }
             </div>
@@ -92,9 +84,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    onSignUp: params => dispatch(usersActions.signUp(params)),
-    onLogin: params => dispatch(usersActions.login(params))
+    onSignUp: params => dispatch(usersActions.signup(params)),
   }
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Login));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(SignUp));
