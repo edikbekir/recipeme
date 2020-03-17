@@ -10,15 +10,17 @@ export default class Delivery extends React.Component {
                 <div className="container-fluid text-center delivery_central_container">
                     <h3> Ваш заказ </h3>
                     <div className="row">
+
                         <div className="goods col-lg-4 offset-2">
-                            <h4> Уточните количество нужных ингридиентов: </h4>
+                            <h4> Уточните количество нужных ингредиентов: </h4>
                         </div>
 
                         <div className="col-lg-3 offset-2">
-                            <i className="fas fa-plus fa-2x"></i>
-                            <i className="fas fa-edit fa-2x "></i>
-                            <i className="fas fa-trash-alt fa-2x  "></i>
+                            <img className="add_button"></img>
+                            <img className="new_note_button"></img>
+                           <img className="delete_button"></img>
                         </div>
+
                         <div className="col-lg-8 offset-2">
                             <table className="table-dark table-bordered table table-hover ">
                                 <thead>
@@ -43,9 +45,7 @@ export default class Delivery extends React.Component {
                                 </tbody>
                             </table>
                         </div>
-                        <div className="col-lg-2 third_column">
-                            <p> + 40 грн доставка</p>
-                        </div>
+                        <p className="third_column"> + 40 грн доставка</p>
 
                         <div className="col-lg-2 offset-3 delivery_signs"><p
                             className="approximate_price_sign"> Приблизительная стоимость</p>

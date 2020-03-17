@@ -16,16 +16,18 @@ nav { background-color: black;}
 
 }
 .btn{
-    width: 130px;
+    width: 170px;
     height: 50px;
-    position: relative;
-    margin-top: 500px;
-  margin-left: 1px;
+    position: absolute;
+    margin-top: 700px;
+  margin-left: 700px;
 }
+
 .col-lg-3
 {
 color: black;
 }
+
 .delivery_central_container {
     background-image: url("../../public/images/recognize.jpg");
     background-position: center center;
@@ -38,27 +40,49 @@ color: black;
 .delivery_inputs input { margin-top: 20px;
     margin-bottom:15px; width: 120%; height: 30px; border-radius: 100px; background-color: transparent; border: solid 1px black;}
 
-.delivery_signs p {margin-top: 3px; }
+.delivery_signs p {margin-top: 3px; font-weight:bold;}
 
 .delivery_signs {margin-bottom: 30px; }
 
-.delivery_inputs select { margin-top:40px; width: 120%; height: 40px; background-color: transparent; border: solid 1px black;  }
-
-.third_column {margin-top: 30px;}
-.third_column p {
-
+.delivery_inputs select { margin-top:40px; width: 120%; height: 40px; background-color: transparent; border: solid 1px black;
 }
+
+
+.third_column{
+    font-weight:bold;
+      margin-top: 200px;  position: absolute;
+    margin-left: 980px;
+}
+.add_button {
+    width: 50px;
+    height: 35px;
+    background: url("../../public/images/plus-solid.svg") no-repeat;
+    border: transparent;
+    }
+
+.new_note_button {
+    width: 50px;
+    height: 30px;
+    background: url("../../public/images/edit-solid.svg") no-repeat;
+    border: transparent}
+
+.delete_button {
+    width: 50px;
+    height: 30px;
+    background: url("../../public/images/trash-alt-solid.svg") no-repeat;
+    border: transparent}
+
 .goods {
     margin-bottom: 10px;
     margin-left: 200px;
 }
-h3 { padding-top: 90px;}
+h3 { padding-top: 100px;}
 
 h4  { padding-top: 15px;}
 
 i {padding-top: 40px; padding-bottom: 40px; }
 
-.bottom_sign {color: black; margin-top: 5px; font-weight: 400; font-size: 10px;  padding: 50px 0}
+.bottom_sign {color: black; margin-top: 30px; font-size: 8px;  padding: 54px 0}
 
 
 
