@@ -17,7 +17,7 @@ export default class Footer extends React.Component {
                         <p className='author'>Recipeme-2020 </p>
                     </li>
                     <li className="nav-item">
-                        <p className='authors'> Developing by Bekir E., Zadoroznyy G., Sakovych C.</p>
+                        <p className='authors'>Developing by Bekir, Zadoroznyy, Sakovych</p>
                     </li>
                 </div>
             </div>

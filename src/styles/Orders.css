@@ -1,0 +1,47 @@
+nav { background-color: black;}
+* {
+    padding: 0;
+    margin: 0; }
+
+.nav-link {
+
+    margin-right: 20px;
+    font-size: 20px; }
+
+
+.img_logo{
+    width: 250px;
+    margin-right: 600px;
+
+
+}
+
+
+footer .nav-link { margin-right: 200px; }
+
+footer a img{ margin-right: 450px;
+    width: 250px;
+}
+
+
+.authors {
+    color: #D3D3D3;
+    font-size: 15px;
+    padding-left: 300px;
+}
+.author {
+    color: #D3D3D3;
+    font-size: 15px;
+    position: center;
+}
+
+.orders_central_container {
+    background-image: url("../../public/images/rec.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding: 100px 0px 280px;
+}
+
+h3  {padding: 0 0 30px;}

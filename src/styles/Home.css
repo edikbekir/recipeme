@@ -5,9 +5,13 @@
 nav { background-color: black;}
 
 .navbar a {
-    color:white  ;
+    color:white;
+    font-size: 18px;
+    margin-right: 6px;
 }
-
+.navbar{
+    height: 150px;
+}
 .navbar a:hover {color: #ffb504;}
 * {
     padding: 0;
@@ -17,10 +21,9 @@ body { background-color: white }
 
 .nav-link {
     margin-right: 20px;
-    font-size: 20px;
+    position: relative;
+
 }
-
-
 
 .central_container button {
     width: 100%;
@@ -124,9 +127,9 @@ p {
 
 .authors {
     color: #D3D3D3;
-    font-size: 15px;
+    font-size: 14px;
     position: relative;
-    padding-left: 270px;
+    padding-left: 450px;
 }
 
 .author {
@@ -190,16 +193,18 @@ img {
     width: 250px;
 }
 
+
 .img_local_ua {
     width: 30px;
     position: relative;
-    padding-top: 90px;
-
+    padding-top: 110px;
+    right: 750px;
 }
 
 .img_local_en {
     width: 30px;
     position: relative;
-    padding-top: 90px;
-    margin-left: 5px;
+    padding-top: 110px;
+    right: 745px;
 }
+

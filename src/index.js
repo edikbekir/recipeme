@@ -9,6 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/App.css';
 import './styles/Home.css';
 import './styles/Recognize.css';
+import './styles/Delivery.css';
+import './styles/Orders.css';
 
 ReactDOM.render(
   <Provider store={store}>
