@@ -72,9 +72,7 @@ export default class Delivery extends React.Component {
                         <input type="text"></input>
                            </form>
                     </div>
-                      {/*  <div className="col-lg-3 offset-4">
-                              <button> Заказать</button>
-                        </div>*/}
+
                         <button type="button" className="btn btn-dark">Заказать</button>
                         <div className="col-lg-12  bottom_sign">
                  <p> *После отправки заказа он будет обработан в течении 5-20 минут и менеджер свяжится с
