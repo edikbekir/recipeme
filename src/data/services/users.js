@@ -6,7 +6,7 @@ export const usersService = {
 }
 
 function signup(params){
-  const url = `${config.api}/api/users`;
+  const url = `${config.api}/api/v1/users/signup`;
   const options = {
     method: 'POST',
     headers: { 'Content-Type': 'application/json'},
@@ -25,18 +25,20 @@ function signup(params){
 }
 
 function login(params){
-  const url = `${config.api}/api/users/sign_in`;
+  const url = new URL(`${config.api}/api/v1/sessions/login`);
+  Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+
   const options = {
-    method: 'POST',
+    method: 'GET',
     headers: { 'Content-Type': 'application/json'},
-    body: JSON.stringify(params)
-  }
+  };
 
   return fetch(url, options)
   .then(response => {
-    return response.json();
+    return response
   })
   .then(response => {
+    debugger
     if(response.error){
       throw new Error(JSON.stringify(response.error));
     }

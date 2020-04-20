@@ -1,28 +1,47 @@
-import React, { Component } from "react";
-import { connect } from 'react-redux';
-import { withRouter } from 'react-router';
+import React, {
+  Component
+} from "react";
+import {
+  connect
+} from 'react-redux';
+import {
+  withRouter
+} from 'react-router';
 
-export default function (ComposedComponent){
+export default function(ComposedComponent) {
   class WithUser extends Component {
 
-    componentWillMount = () => {
-      if(!this.props.user.loggedIn){
-        this.props.history.push('/login');
+    constructor(props) {
+      super(props);
+      this.state = {
+        loading: false,
+        authenticated: localStorage.getItem('authenticated')
+      };
+      this.checkLoggedIn = this.checkLoggedIn.bind(this);
+    }
+
+    checkLoggedIn() {
+      if (!this.state.authenticated) {
+        this.props.history.push(`/login?back=${encodeURIComponent(this.props.history.location.pathname)}`);
       }
     }
 
-    render(){
-      if(this.props.user.loggedIn){
-        return <ComposedComponent {...this.props} />;
-      } else {
-        return null;
+    componentWillMount() {
+      this.checkLoggedIn();
+    }
+
+    render() {
+      if (this.state.authenticated) {
+        return <ComposedComponent { ...this.props } />
       }
     }
   }
-  function mapStateToProps(state){
+
+  function mapStateToProps(state) {
     return {
       user: state.users
-    }
+    };
   }
+
   return withRouter(connect(mapStateToProps)(WithUser));
 }

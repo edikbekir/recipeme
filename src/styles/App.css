@@ -102,11 +102,17 @@ h6 {
 }
 
 .bg-black {
+  margin: auto;
+  width: 74%;
+  position: absolute;
+  right: 0;
   background: #1f1f1f !important;
 }
 
 .bg-white {
   color: #fff !important;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .bg-blue {
@@ -168,12 +174,9 @@ h6 {
 }
 
 div.main-heading {
-  margin-top: 76px;
   background: url("../../public/images/recipe-background.jpg") top left/cover no-repeat;
   width: 1290px;
   height: 669px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   position: relative;
 }
 
@@ -290,7 +293,7 @@ div.main-heading {
 }
 
 input[type="text"] {
-  flex-basis: 500px;
+  flex-basis: 1900px;
 }
 
 @media all and (max-width:800px) {
@@ -309,4 +312,30 @@ input[type="text"] {
   .flex-form > * {
     font-size: 0.9rem;
   }
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-nav {
+  border-right: 2px solid red;
+  width: 35%;
+}
+
+.w3-animate-left {
+  z-index: 2;
+  min-width: 250px;
+  width: 26%;
+}
+
+.w3-bar-item {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.w3-top .navbar {
+
 }

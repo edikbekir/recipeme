@@ -23,14 +23,12 @@ export class Login extends React.Component {
   }
 
   componentDidUpdate(prevProps){
-    console.log(this.props.user.loggedIn)
     if(this.props.user.loggedIn){
       this.props.history.push(this.state.redirect);
     }
   }
 
-  componentWillMount = () => {
-    console.log(this.props.user.loggedIn)
+  componentWillMount(){
     if(this.props.user.loggedIn){
       this.props.history.push('/home');
     }

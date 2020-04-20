@@ -8,7 +8,9 @@ export const usersActions = {
 function signup(params){
   return dispatch => {
     dispatch(request());
-    return usersService.signup(params)
+    const { email, password, firstName: first_name, lastName: last_name } = params;
+    const requestParams = { email, password, first_name, last_name };
+    return usersService.signup(requestParams)
     .then( response => {
       dispatch(login(params));
       dispatch(success(response));
@@ -27,6 +29,7 @@ function login(params){
     dispatch(request());
     return usersService.login(params)
     .then( response => {
+      localStorage.setItem('authenticated', true);
       dispatch(success(response));
     })
     .catch( error => {

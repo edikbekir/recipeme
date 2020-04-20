@@ -8,5 +8,5 @@ export default (
   <Switch>
     <Route path="/login" component={Blank} />
     <Route component={WithUser(Main)} />
-  </Switch>
+    </Switch>
 );
